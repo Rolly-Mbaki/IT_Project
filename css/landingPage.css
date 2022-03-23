@@ -26,6 +26,38 @@ ul li a{
     font-weight: bolder;
 }
 
+#pc-nav{
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+#myLinks a{
+    background-color: #333;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 
 footer{
     padding: 30px;
@@ -98,7 +130,7 @@ main a{
         color: #20bc4e;
         border-bottom: 2px solid #20bc4e;
     }
-    
+
     .card:hover{
         transform: scale(1.1);
         box-shadow: 1px 1px 18px rgba(32,188,78,255);

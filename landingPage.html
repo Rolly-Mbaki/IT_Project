@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/landingPage.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2391a493c1.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="pc-nav">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Quiz</a></li>
@@ -17,6 +19,18 @@
                 <li><a href="">Blacklisted Clubs</a></li>
                 <li><a href="">Favoriete Leagues</a></li>
             </ul>
+        </nav>
+        <nav class="topnav">
+            <a href="">Home</a>
+            <div id="myLinks">
+                <a href="#">Quiz</a>
+                <a href="#">Favoriete Clubs</a>
+                <a href="#">Blacklisted Clubs</a>
+                <a href="#">Favoriete Leagues</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </nav>
     </header>
     <main>
