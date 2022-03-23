@@ -10,6 +10,7 @@ header{
     background-color: #121212;
     padding: 10px;
     height: 50px;
+    text-align: center;
 }
 
 ul{
@@ -38,6 +39,8 @@ footer p {
 /*Tot hier is het dezelfde code voor elke pagina*/
 
 main{
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +79,7 @@ main a{
 .card-text{
     grid-area: text;
     color: white;
+    margin: auto;
 }
 
 .card-text p{
@@ -85,7 +89,16 @@ main a{
 @media only screen and (min-width: 800px) {
     main{
         height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
     }
+
+    
+    ul li a:hover{
+        color: #20bc4e;
+        border-bottom: 2px solid #20bc4e;
+    }
+    
     .card:hover{
         transform: scale(1.1);
         box-shadow: 1px 1px 18px rgba(32,188,78,255);
