@@ -9,7 +9,9 @@ main{
     margin-top: 20px;
     max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    overflow: auto;
     flex-wrap: wrap;
     gap: 20px;
     background-color: lightgrey;
