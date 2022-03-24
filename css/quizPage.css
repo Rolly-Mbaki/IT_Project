@@ -29,7 +29,7 @@ ul li a{
 #pc-nav{
     display: none;
 }
-/*Begin w3schools code*/
+
 .topnav {
     overflow: hidden;
     position: relative;
@@ -68,61 +68,9 @@ footer{
     text-align: center;
     background-color: #000000;
 }
-/*Einde w3schools code*/
 
 footer p {
     color: #ffffff;
-}
-/*Tot hier is het dezelfde code voor elke pagina*/
-
-main{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    overflow: auto;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-main a{
-    text-decoration: none;
-}
-
-.card{
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 200px 250px;
-    grid-template-areas: 'img'
-                         'text';
-
-    border-radius: 25px;
-    background-color: #121212;
-    text-align: center;
-    transition: 0.5s ease;
-}
-
-.card-img{
-    grid-area: img;
-    background: url("/images/footballimg.jpg");
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    background-size: cover;
-
-}
-
-.card-text{
-    grid-area: text;
-    color: white;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.card-text p{
-    color: rgb(175, 175, 175);
 }
 
 @media only screen and (min-width: 800px) {
@@ -144,10 +92,37 @@ main a{
         color: #20bc4e;
         border-bottom: 2px solid #20bc4e;
     }
-    /*Tot hier is het dezelfde code voor elke pagina*/
-    .card:hover{
-        transform: scale(1.1);
-        box-shadow: 1px 1px 18px rgba(32,188,78,255);
-        cursor: pointer;
-    }
+
   }
+
+/*Tot hier is het dezelfde code voor elke pagina*/
+
+#home h1{
+    color: #ffffff;
+}
+/*Youtube code kanaal: Brian Design*/
+i{
+    color: white;
+}
+
+h1{
+    font: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h2{
+    font: 25px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
