@@ -94,81 +94,35 @@ footer p {
     }
 
   }
+  
 
 /*Tot hier is het dezelfde code voor elke pagina*/
+body{color: white;}
 
-#home h1{
-    color: #ffffff;
-}
-/*Youtube code kanaal: Brian Design*/
-i{
-    margin-left: 5px;
-    font-size: 25px;
-}
-
-h1{
-    font: 50px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-h2{
-    font: 25px;
-    margin-bottom: 10px;
-}
-
-#home {
-    height: 100vh;
+.choice-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.btn{
-    font-size: 20px;
-    padding: 15px;
-    width: 250px;
-    text-align: center;
     margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
-    background: linear-gradient(to bottom right, #05521c, #20bc4e );
     border-radius: 10px;
+    background: #20bc4e;
+    font-size: 30px;
     transition: 0.5s ease;
+    width: 100%;
+    min-width: 40rem;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2rem;
+    color: black;
+}
+
+.choice-text{
+    padding: 1.5rem;
 }
 
 @media only screen and (min-width: 800px) {
-    .btn:hover{
+    .choice-container:hover{
         cursor: pointer;
         transform: scale(1.05);
-    }
-
-    .btn[disabled]{
-        cursor: not-allowed;
-        transform: none;
     }
 
   }
