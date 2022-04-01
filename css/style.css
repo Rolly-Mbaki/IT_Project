@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 main{
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: auto;
     max-width: 1200px;
     display: flex;
     justify-content: center;
@@ -18,17 +16,6 @@ main{
     padding: 20px;
     border-radius: 10px;
 }
-article{
-    flex: 1 1 350px;
-    border: 2px solid;
-    padding-bottom: 1px;
-}
-article img{
-    display: block;
-    width: 100%;
-    height: auto;
-    
-}
 footer{
     text-align: center;
     margin-top: 10px;
@@ -37,6 +24,69 @@ header{
     text-align: center;
     margin-bottom: -10px;
     font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+header h1{
+    margin-bottom: 50px;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 50px 200px;
+    grid-template-areas: 'text'
+                         'img';
+
+    border-radius: 10px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.card-img{
+    grid-area: img;
+    background: url("/images/fifa.png");
+    background-size: contain;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.magic .card-img{
+    background: url("/images/magic.jpg");
+    background-size: contain;
+}
+
+.lego .card-img{
+    background: url("/images/Lego-logo.jpg");
+    background-size: contain;
+}
+
+.theone .card-img{
+    background: url("/images/lordoftherings.jpg");
+    background-size: cover;
+}
+
+.fort .card-img{
+    background: url("/images/fortnite.jpg");
+    background-size: cover;
+}
+
+.nbb .card-img{
+    background: url("/images/nationalebank.png");
+    background-size: contain;
+}
+
+.card-text{
+    grid-area: text;
+    color: white;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border-radius: 10px;
+}
