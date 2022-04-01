@@ -1,0 +1,136 @@
+body{
+    max-width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #121212;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+ul li a{
+    padding: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+#pc-nav{
+    display: none;
+}
+/*Begin w3schools code*/
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a.page-title{
+    font-size: 20px;
+}
+
+#myLinks a{
+    background-color: #333;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #000000;
+}
+/*Einde w3schools code*/
+footer p {
+    color: #ffffff;
+}
+@media only screen and (min-width: 800px) {
+    main{
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+    }
+
+    .topnav{
+        display: none;
+    }
+    
+    #pc-nav{
+        display: block;
+    }
+    ul li a:hover{
+        color: #20bc4e;
+        border-bottom: 2px solid #20bc4e;
+    }
+    .card:hover{
+        transform: scale(1.01);
+        box-shadow: 1px 1px 18px rgba(32,188,78,255);
+        cursor: pointer;
+    }
+    h1{
+        text-align: center;
+        color: #ffffff;
+    }
+    main{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: auto;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    main a{
+        text-decoration: none;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        
+    
+        border-radius: 25px;
+        background-color: #121212;
+        text-align: center;
+        transition: 0.5s ease;
+    }}
+    .list{
+        display: flex;
+        list-style-type: none;
+        font-size: x-large;
+        justify-content: center;
+    }
+    
+
+
