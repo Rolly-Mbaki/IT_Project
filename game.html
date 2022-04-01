@@ -1,81 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Time</title>
-    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/game.css" />
     <script src="./js/game.js"></script>
     <script src="./js/menu.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="pc-nav">
-            <ul>
-                <li><a href="landingPage.html">Home</a></li>
-                <li><a href="quizPage.html">Quiz</a></li>
-                <li><a href="favorieteClubs.html#">Favoriete Clubs</a></li>
-                <li><a href="">Blacklisted Clubs</a></li>
-                <li><a href="">Favoriete Leagues</a></li>
-            </ul>
-        </nav>
-        <nav class="topnav">
-            <a href="quizPage.html" class="page-title">Quiz</a>
-            <div id="myLinks">
-                <a href="landingPage.html">Home</a>
-                <a href="favorieteClubs.html#">Favoriete Clubs</a>
-                <a href="#">Blacklisted Clubs</a>
-                <a href="#">Favoriete Leagues</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-        </nav>
+      <nav id="pc-nav">
+        <ul>
+          <li><a href="landingPage.html">Home</a></li>
+          <li><a href="quizPage.html">Quiz</a></li>
+          <li><a href="favorieteClubs.html#">Favoriete Clubs</a></li>
+          <li><a href="blacklistedClubs.html">Blacklisted Clubs</a></li>
+          <li><a href="">Favoriete Leagues</a></li>
+        </ul>
+      </nav>
+      <nav class="topnav">
+        <a href="quizPage.html" class="page-title">Quiz</a>
+        <div id="myLinks">
+          <a href="landingPage.html">Home</a>
+          <a href="favorieteClubs.html#">Favoriete Clubs</a>
+          <a href="blacklistedClubs.html">Blacklisted Clubs</a>
+          <a href="#">Favoriete Leagues</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
     </header>
     <main>
-        <div id="home">
-            <div id="game" class="justify-center flex-column">
-                <div id="hud">
-                    <div class="hud-item">
-                        <p id="progressText" class="hud-prefix">
-                            vraag
-                        </p>
-                        <div id="progressBar">
-                            <div id="progressBarFull"></div>
-                        </div>
-                    </div>
-                    <div class="hud-item">
-                        <p class="hud-prefix">
-                            Score
-                        </p>
-                        <h1 class="hud-main-text" id="score">
-                            0
-                        </h1>
-                    </div>
-                    <div id="question">Welke club emblem is dit?</div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">A</p>
-                        <p class="choice-text" data-number="1">Choice</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">B</p>
-                        <p class="choice-text" data-number="2">Choice</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">C</p>
-                        <p class="choice-text" data-number="3">Choice</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">D</p>
-                        <p class="choice-text" data-number="4">Choice</p>
-                    </div>
-                </div>
+      <div id="home">
+        <div id="game" class="justify-center flex-column">
+          <div id="hud">
+            <div class="hud-item">
+              <p id="progressText" class="hud-prefix">vraag</p>
+              <div id="progressBar">
+                <div id="progressBarFull"></div>
+              </div>
             </div>
+            <div class="hud-item">
+              <p class="hud-prefix">Score</p>
+              <h1 class="hud-main-text" id="score">0</h1>
+            </div>
+            <div id="question">Welke club emblem is dit?</div>
+            <div class="choice-container">
+              <p class="choice-prefix">A</p>
+              <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">B</p>
+              <p class="choice-text" data-number="2">Choice</p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">C</p>
+              <p class="choice-text" data-number="3">Choice</p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">D</p>
+              <p class="choice-text" data-number="4">Choice</p>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <p>&copy; IT-PROJECT gemaakt door SBC 2021-2022</p>
+      <p>&copy; IT-PROJECT gemaakt door SBC 2021-2022</p>
     </footer>
-</body>
+  </body>
 </html>
