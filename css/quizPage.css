@@ -67,6 +67,9 @@ footer{
     padding: 30px;
     text-align: center;
     background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
@@ -75,7 +78,6 @@ footer p {
 
 @media only screen and (min-width: 800px) {
     main{
-        height: 100vh;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -118,7 +120,6 @@ h2{
 }
 
 #home {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

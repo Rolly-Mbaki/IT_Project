@@ -5,7 +5,6 @@ body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 header{
     background-color: #121212;
     padding: 10px;
@@ -112,6 +111,20 @@ main a{
     background-size: cover;
 
 }
+.fl-img{
+    background: url("/images/leagues.jpg");
+    background-size: contain;
+}
+
+.fc-img{
+    background: url("/images/favclub.jpg");
+    background-size: cover;
+}
+
+.bc-img{
+    background: url("/images/leagues.jpg");
+    background-size: contain;
+}
 
 .card-text{
     grid-area: text;
@@ -127,9 +140,8 @@ main a{
 
 @media only screen and (min-width: 800px) {
     main{
-        height: 100vh;
-        margin-top: 0;
-        margin-bottom: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .topnav{
