@@ -210,3 +210,46 @@ footer{
     text-align: center;
     margin-top: 10px;
 }
+.search{
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: black;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-size: 17px;
+    border: 1px solid green;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: darkgreen;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
