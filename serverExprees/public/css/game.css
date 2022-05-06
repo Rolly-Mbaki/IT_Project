@@ -75,6 +75,7 @@ footer p {
 
 @media only screen and (min-width: 800px) {
     main{
+        height: 100vh;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -98,18 +99,14 @@ footer p {
 /*Tot hier is het dezelfde code voor elke pagina*/
 body{color: white;}
 
-#game{
-    width: 500px;
-    margin: auto;
-}
-
 .choice-container{
     display: flex;
-    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
     background: #20bc4e;
     font-size: 30px;
     transition: 0.5s ease;
+    width: 100%;
     min-width: 40rem;
 }
 
@@ -125,7 +122,7 @@ body{color: white;}
 @media only screen and (min-width: 800px) {
     .choice-container:hover{
         cursor: pointer;
-        transform: scale(1.02);
+        transform: scale(1.05);
     }
 
   }

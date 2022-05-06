@@ -71,6 +71,7 @@ footer {
 footer p {
   color: #ffffff;
 }
+/*Tot hier is het dezelfde code voor elke pagina*/
 
 @media only screen and (min-width: 800px) {
   main {
@@ -131,4 +132,8 @@ footer p {
     transition: 0.5s ease;
   }
 
+
 }
+
+
+
