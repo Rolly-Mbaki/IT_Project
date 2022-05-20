@@ -1,9 +1,15 @@
+html{
+    height: 100%;
+}
 body{
     max-width: 100%;
+    min-height: 100%;
     background-color: #000000;
     box-sizing: border-box;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -67,6 +73,7 @@ footer{
     padding: 30px;
     text-align: center;
     background-color: #000000;
+    margin-top: auto;
 }
 
 footer p {
@@ -98,34 +105,118 @@ footer p {
 /*Tot hier is het dezelfde code voor elke pagina*/
 body{color: white;}
 
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+h2{
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
+#home{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
 #game{
-    width: 500px;
-    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
 }
 
 .choice-container{
     display: flex;
-    margin-top: 10px;
+    margin-bottom: 0.8rem;
     border-radius: 10px;
     background: #20bc4e;
-    font-size: 30px;
+    font-size: 1rem;
     transition: 0.5s ease;
-    min-width: 40rem;
+    width: 100%;
+    min-width: 15rem;
 }
 
 .choice-prefix{
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
     color: black;
 }
 
 .choice-text{
-    padding: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.correct{
+    background: rgb(19, 198, 214);
+}
+
+.incorrect{
+    background: red;
+}
+#apiFoto{
+    width: 100px;
+}
+/*hud*/
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hud.main-text{
+    text-align: center;
+}
+#progressBar{
+    width: 5rem;
+    height: 1rem;
+    border: 0.2rem solid rgb(19, 214, 19);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    background: rgb(19, 214, 19);
+    width: 0%;
 }
 
 @media only screen and (min-width: 800px) {
     .choice-container:hover{
         cursor: pointer;
-        transform: scale(1.02);
+        transform: scale(1.01);
+    }
+    .choice-container{
+        font-size: 1.2rem;
+        min-width: 40rem;
+    }
+
+    .hud-prefix{
+        font-size: 2rem;
+    }
+    
+    #progressBar{
+        width: 20rem;
+        height: 3rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    #home{
+        max-width: 50rem;
+    }
+    #apiFoto{
+        width: 250px;
     }
 
   }

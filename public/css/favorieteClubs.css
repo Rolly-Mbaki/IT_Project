@@ -1,0 +1,212 @@
+body{
+    max-width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #121212;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+ul li a{
+    padding: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+#pc-nav{
+    display: none;
+}
+/*Begin w3schools code*/
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a.page-title{
+    font-size: 20px;
+}
+
+#myLinks a{
+    background-color: #333;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #000000;
+}
+/*Einde w3schools code*/
+
+footer p {
+    color: #ffffff;
+}
+@media only screen and (min-width: 800px) {
+    main{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .topnav{
+        display: none;
+    }
+    
+    #pc-nav{
+        display: block;
+    }
+
+    ul li a:hover{
+        color: #20bc4e;
+        border-bottom: 2px solid #20bc4e;
+    }
+    .card:hover{
+        transform: scale(1.01);
+        box-shadow: 1px 1px 18px rgba(32,188,78,255);
+        cursor: pointer;
+    }
+  }
+    /*Tot hier is het dezelfde code voor elke pagina*/
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+main a{
+    text-decoration: none;
+}
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 250px;
+    grid-template-areas: 'img'
+                         'text';
+
+    border-radius: 25px;
+    background-color: #121212;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.card-img{
+    grid-area: img;
+    background: url("/images/Barcelona.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 205px;
+}
+.card-img2{
+    grid-area: img;
+    background: url("/images/GS.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 160px;
+}
+.card-img3{
+    grid-area: img;
+    background: url("/images/Real\ Madrid.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 145px;
+}
+.card-img4{
+    grid-area: img;
+    background: url("/images/Juve2.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 160px;
+}
+.card-img5{
+    grid-area: img;
+    background: url("/images/Liverpool.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 150px;
+}
+.card-img6{
+    grid-area: img;
+    background: url("/images/Bayern.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 200px;
+}
+.card-img7{
+    grid-area: img;
+    background: url("/images/inter.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 145.5px;
+}
+.card-img8{
+    grid-area: img;
+    background: url("/images/Paris_Saint-Germain_logo.png");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    width: 180px;
+}
+
+.card-text{
+    grid-area: text;
+    color: white;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-text p{
+    color: rgb(175, 175, 175);
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
