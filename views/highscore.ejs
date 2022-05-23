@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/quizEnd.css" />
+    <link rel="stylesheet" href="./css/highscore.css" />
     <script
       src="https://kit.fontawesome.com/2391a493c1.js"
       crossorigin="anonymous"
     ></script>
     <script src="./js/menu.js"></script>
-    <script defer src="./js/quizEnd.js"></script>
+    <script defer src="./js/highscore.js"></script>
     <script
       src="https://kit.fontawesome.com/2391a493c1.js"
       crossorigin="anonymous"
     ></script>
-    <title>Results</title>
+    <title>High Scores</title>
   </head>
   <body>
     <header>
@@ -45,15 +45,10 @@
     </header>
     <main>
         <div class="container">
-            <div id="end" class="flex-center flex-column">
-                <h1 id="finalScore">0</h1>
-                <form class="end-form-container">
-                  <h2 id="end-text">VUL JE NAAM HIER IN</h2>
-                  <input type="text" name="name" id="username" placeholder="Naam">
-                  <button id="saveScoreBtn" class="btn" type="submit" onclick="saveHighScore(event)" disabled>Opslaan</button>
-                </form>
-                <a href="/game" class="btn">Opnieuw Starten <i class="fa-solid fa-arrow-rotate-left"></i></a>
-                <a href="/landingPage" class="btn">Terug naar begin <i class="fa-solid fa-house"></i></a>
+            <div id="highScores" class="flex-center flexcolumn">
+                <h1 id="finalScore">Leaderboard</h1>
+                <ul id="highScoresList"></ul>
+                <a href="/landingPage" class="btn">Terug naar het begin <i class="fa-solid fa-house"></i></a>
             </div>
         </div>
     </main>

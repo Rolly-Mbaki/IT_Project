@@ -25,6 +25,7 @@ const landingPageRouter = require('./routes/landingPage')
 const quizPageRouter = require('./routes/quizPage')
 const quizTestRouter = require('./routes/quizTest')
 const quizEndRouter = require('./routes/quizEnd')
+const highscoreRouter = require('./routes/highscore')
 
 app.use('/', apiTestRouter)
 app.use('/', bcRouter)
@@ -36,6 +37,7 @@ app.use('/', landingPageRouter)
 app.use('/', quizPageRouter)
 app.use('/', quizTestRouter)
 app.use('/', quizEndRouter)
+app.use('/', highscoreRouter)
 
 app.listen(app.get("port"), () => {
   console.log(`Web application started at http://localhost:${app.get("port")}`);

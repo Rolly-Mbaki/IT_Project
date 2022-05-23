@@ -2,17 +2,14 @@ html{
     height: 100%;
 }
 body{
-    min-height: 100%;
     max-width: 100%;
+    min-height: 100%;
     background-color: #000000;
     box-sizing: border-box;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
-    gap: 200px;
 }
 
 header{
@@ -24,6 +21,7 @@ header{
 
 ul{
     list-style: none;
+    padding: 0;
 }
 li{
     display: inline-block;
@@ -103,69 +101,49 @@ footer p {
     }
 
   }
+  /*Tot hier is het dezelfde code voor elke pagina*/
+  body{
+      color: white;
+  }
 
-/*Tot hier is het dezelfde code voor elke pagina*/
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+  }
+  #highScoreList{
+      list-style: none;
+      margin-bottom: 4rem;
+  }
+  .high-score {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+  }
 
-#home h1{
-    color: #ffffff;
-}
-/*Youtube code kanaal: Brian Design*/
-i{
-    margin-left: 5px;
-    font-size: 25px;
-}
 
-h1{
-    font: 50px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
+  #finalScore{
+      text-align: center;
+      font-size: 3rem;
+  }
 
-h2{
-    font: 25px;
-    margin-bottom: 10px;
-}
+  #highScoresList>li{
+      display: block;
+      text-align: center;
+  }
 
-#home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.btn{
+  .btn{
     font-size: 20px;
     padding: 15px;
     width: 250px;
     text-align: center;
-    margin-bottom: 10px;
     text-decoration: none;
     color: black;
     background: linear-gradient(to bottom right, #05521c, #20bc4e );
     border-radius: 10px;
     transition: 0.5s ease;
+    display: block;
+    margin: 30px auto;
 }
 
 @media only screen and (min-width: 800px) {
