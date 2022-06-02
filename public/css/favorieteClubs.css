@@ -112,6 +112,7 @@ main{
     overflow: auto;
     flex-wrap: wrap;
     gap: 50px;
+    position: relative;
 }
 
 main a{
@@ -128,6 +129,7 @@ main a{
     background-color: #121212;
     text-align: center;
     transition: 0.5s ease;
+    position: relative;
 }
 
 .card-img{
@@ -137,6 +139,9 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 205px;
+    place-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
 .card-img2{
     grid-area: img;
@@ -145,6 +150,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 160px;
+    margin-left: 70px;
 }
 .card-img3{
     grid-area: img;
@@ -153,6 +159,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 145px;
+    margin-left: 70px;
 }
 .card-img4{
     grid-area: img;
@@ -161,6 +168,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 160px;
+    margin-left: 45px;
 }
 .card-img5{
     grid-area: img;
@@ -169,6 +177,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 150px;
+    margin-left: 70px;
 }
 .card-img6{
     grid-area: img;
@@ -177,6 +186,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 200px;
+    margin-left: 50px;
 }
 .card-img7{
     grid-area: img;
@@ -185,6 +195,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 145.5px;
+    margin-left: 75px;
 }
 .card-img8{
     grid-area: img;
@@ -193,6 +204,7 @@ main a{
     border-top-right-radius: 25px;
     background-size: cover;
     width: 180px;
+    margin-left: 50px;
 }
 
 .card-text{
