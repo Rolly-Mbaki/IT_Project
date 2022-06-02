@@ -125,6 +125,10 @@ allApis
           acceptingAnswers = true
       }
 
+      stopQuiz = () => {
+        return window.location.assign('/quizEnd')
+      }
+
       choices.forEach(choice=>{
           choice.addEventListener('click', e =>{
               if(!acceptingAnswers) return
@@ -137,6 +141,9 @@ allApis
 
               if (classToApply === 'correct') {
                   incrementScore(SCORE_POINTS)
+              }
+              else{
+                  stopQuiz()
               }
 
               selectedChoice.parentElement.classList.add(classToApply)
