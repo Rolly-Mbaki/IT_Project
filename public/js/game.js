@@ -23,7 +23,7 @@ const clubsApi = fetch("https://futdb.app/api/clubs", requestOptions)
 const leaguesApi = fetch("https://futdb.app/api/leagues", requestOptions2)
 .then(async (res) => res.json())
 
-var url = 'https://futdb.app/api/clubs/1/image'
+/*var url = 'https://futdb.app/api/clubs/1/image'
 
 fetch('https://futdb.app/api/clubs/1/image',requestOptions)
 .then(async (res) => {
@@ -33,6 +33,7 @@ fetch('https://futdb.app/api/clubs/1/image',requestOptions)
     var img = url.createObjectUrl(blob)
     document.getElementById('apiFoto').src = img
 })
+*/
 
 const allApis = Promise.all([clubsApi, leaguesApi])
 
