@@ -103,8 +103,8 @@ h1{
     color: #ffffff;
 }
 main{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
