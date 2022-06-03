@@ -188,6 +188,13 @@ h2{
     width: 0%;
 }
 
+button{
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
 @media only screen and (min-width: 800px) {
     .choice-container:hover{
         cursor: pointer;
@@ -218,5 +225,13 @@ h2{
     #apiFoto{
         width: 250px;
     }
-
+    button:hover{
+        cursor: pointer;
+    }
+    .like:hover{
+        background-color: #20bc4e;
+    }
+    .dislike:hover{
+        background-color: red;
+    }
   }
