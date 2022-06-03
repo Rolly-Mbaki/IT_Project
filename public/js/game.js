@@ -88,7 +88,55 @@ allApis
               choice3: 'Serie A',
               choice4: 'Primeira Liga',
               answer: 1
-          }
+          },
+          {
+              question: 'Tot welke club behoort dit logo?',
+              choice1: 'Liverpool',
+              choice2: 'Real Betis',
+              choice3: `${response[0].items[2].name}`,
+              choice4: 'Real Madrid',
+              answer: 3
+          },
+          {
+              question: 'Tot welke league behoort dit logo?',
+              choice1: `${response[1].items[2].name}`,
+              choice2: 'Bundesliga',
+              choice3: 'Major League Soccer',
+              choice4: 'Japanese J League',
+              answer: 1
+          },
+          {
+              question: 'Tot welke club behoort dit logo?',
+              choice1: 'Manchester City',
+              choice2: 'Borussia Dortmund',
+              choice3: 'Antwerpen',
+              choice4: `${response[0].items[3].name}`,
+              answer: 4
+          },
+          {
+              question: 'Tot welke league behoort dit logo?',
+              choice1: 'Australian A-League',
+              choice2: 'French Ligue 1',
+              choice3: `${response[1].items[3].name}`,
+              choice4: 'Turkish Super Lig',
+              answer: 3
+          },
+          {
+              question: 'Tot welke club behoort dit logo?',
+              choice1:  `${response[0].items[4].name}`,
+              choice2: 'AC Milan',
+              choice3: 'Ajax',
+              choice4: 'Tottenham Hotspur',
+              answer: 1
+          },
+          {
+              question: 'Tot welke league behoort dit logo?',
+              choice1: 'Italian Serie A',
+              choice2: 'Mexican Liga BBVA MX',
+              choice3: 'Premier League',
+              choice4: `${response[1].items[4].name}`,
+              answer: 4
+          },
       ]
 
       const SCORE_POINTS = 100
