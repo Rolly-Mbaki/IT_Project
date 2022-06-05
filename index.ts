@@ -47,6 +47,7 @@ app.use('/', quizTestRouter)
 app.use('/', quizEndRouter)
 app.use('/', highscoreRouter)
 
+app.set('port', (process.env.PORT || 5000))
 app.listen(app.get("port"), () => {
   console.log(`Web application started at http://localhost:${app.get("port")}`);
 });
