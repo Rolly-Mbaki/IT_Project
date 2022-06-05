@@ -3,9 +3,8 @@ const flRouter = express.Router()
 const axios = require('axios')
 
 
-flRouter.get("/favorieteLeague", (req: any, res: any) => {
+flRouter.get("/favorieteLeague", (req, res) => {
   res.render("favorieteLeague");
 });
 
-export{}
 module.exports = flRouter

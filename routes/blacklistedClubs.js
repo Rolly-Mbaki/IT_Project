@@ -3,10 +3,9 @@ const bcRouter = express.Router()
 const axios = require('axios')
 
 
-bcRouter.get("/blacklistedClubs", (req: any, res: any) => {
+bcRouter.get("/blacklistedClubs", (req, res) => {
   res.render("blacklistedClubs");
 });
 
-  export{}
-  module.exports = bcRouter
+module.exports = bcRouter
 

@@ -3,9 +3,9 @@ const quizPageRouter = express.Router()
 const axios = require('axios')
 
 
-quizPageRouter.get("/quizPage", (req: any, res: any) => {
+quizPageRouter.get("/quizPage", (req, res) => {
   res.render("quizPage");
 });
 
-export{}
+
 module.exports = quizPageRouter

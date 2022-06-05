@@ -3,9 +3,9 @@ const indexRouter = express.Router()
 const axios = require('axios')
 
 
-indexRouter.get("/", (req: any, res: any) => {
+indexRouter.get("/", (req, res) => {
     res.render("index");
   });
 
-  export{}
-  module.exports = indexRouter
+  
+module.exports = indexRouter
