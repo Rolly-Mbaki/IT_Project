@@ -49,6 +49,9 @@ allApis
       const progressText = document.querySelector('#progressText')
       const scoreText = document.querySelector('#score')
       const progressBarFull = document.querySelector('#progressBarFull')
+      const clubName = document.querySelector('#clubName')
+      const clubId = document.querySelector('#clubId')
+      const clubLeagueID = document.querySelector('#clubLeagueID')
 
       let currentQuestion = {}
       let acceptingAnswers = true
@@ -63,7 +66,10 @@ allApis
               choice2: `${response[0].items[0].name}`,
               choice3: 'FC Utrecht',
               choice4: 'Galatasary',
-              answer: 2
+              answer: 2,
+              id: `${response[0].items[0].id}`,
+              league: `${response[0].items[0].league}`,
+              name: `${response[0].items[0].name}`
           },
           {
               question: 'Tot welke league behoort dit logo?',
@@ -71,7 +77,9 @@ allApis
               choice2: 'Ligue 1',
               choice3: 'La liga',
               choice4: `${response[1].items[0].name}`,
-              answer: 4
+              answer: 4,
+              id: `${response[1].items[0].id}`,
+              name: `${response[1].items[0].name}`
           },
           {
               question: 'Tot welke club behoort dit logo?',
@@ -79,7 +87,10 @@ allApis
               choice2: 'Trabzonspor',
               choice3: `${response[0].items[1].name}`,
               choice4: 'Real Madrid',
-              answer: 3
+              answer: 3,
+              id: `${response[0].items[1].id}`,
+              league: `${response[0].items[1].league}`,
+              name: `${response[0].items[1].name}`
           },
           {
               question: 'Tot welke league behoort dit logo?',
@@ -87,7 +98,9 @@ allApis
               choice2: 'Primera División de Argentina',
               choice3: 'Serie A',
               choice4: 'Primeira Liga',
-              answer: 1
+              answer: 1,
+              id: `${response[1].items[1].id}`,
+              name: `${response[1].items[1].name}`
           },
           {
               question: 'Tot welke club behoort dit logo?',
@@ -95,7 +108,10 @@ allApis
               choice2: 'Real Betis',
               choice3: `${response[0].items[2].name}`,
               choice4: 'Real Madrid',
-              answer: 3
+              answer: 3,
+              id: `${response[0].items[2].id}`,
+              league: `${response[0].items[2].league}`,
+              name: `${response[0].items[2].name}`
           },
           {
               question: 'Tot welke league behoort dit logo?',
@@ -103,7 +119,9 @@ allApis
               choice2: 'Bundesliga',
               choice3: 'Major League Soccer',
               choice4: 'Japanese J League',
-              answer: 1
+              answer: 1,
+              id: `${response[1].items[2].id}`,
+              name: `${response[1].items[2].name}`
           },
           {
               question: 'Tot welke club behoort dit logo?',
@@ -111,7 +129,10 @@ allApis
               choice2: 'Borussia Dortmund',
               choice3: 'Antwerpen',
               choice4: `${response[0].items[3].name}`,
-              answer: 4
+              answer: 4,
+              id: `${response[0].items[3].id}`,
+              league: `${response[0].items[3].league}`,
+              name: `${response[0].items[3].name}`
           },
           {
               question: 'Tot welke league behoort dit logo?',
@@ -119,7 +140,9 @@ allApis
               choice2: 'French Ligue 1',
               choice3: `${response[1].items[3].name}`,
               choice4: 'Turkish Super Lig',
-              answer: 3
+              answer: 3,
+              id: `${response[1].items[3].id}`,
+              name: `${response[1].items[3].name}`
           },
           {
               question: 'Tot welke club behoort dit logo?',
@@ -127,7 +150,10 @@ allApis
               choice2: 'AC Milan',
               choice3: 'Ajax',
               choice4: 'Tottenham Hotspur',
-              answer: 1
+              answer: 1,
+              id: `${response[0].items[4].id}`,
+              league: `${response[0].items[4].league}`,
+              name:  `${response[0].items[4].name}`
           },
           {
               question: 'Tot welke league behoort dit logo?',
@@ -135,7 +161,9 @@ allApis
               choice2: 'Mexican Liga BBVA MX',
               choice3: 'Premier League',
               choice4: `${response[1].items[4].name}`,
-              answer: 4
+              answer: 4,
+              id: `${response[1].items[4].id}`,
+              name: `${response[1].items[4].name}`
           },
       ]
 
@@ -163,6 +191,10 @@ allApis
           const questionIndex = Math.floor(Math.random()*availableQuestions.length)
           currentQuestion = availableQuestions[questionIndex]
           question.innerText = currentQuestion.question
+
+          clubName.value = `${currentQuestion.name}`
+          clubId.value = `${currentQuestion.id}`
+          clubLeagueID.value = `${currentQuestion.league}`
 
           choices.forEach(choice=>{
               const number = choice.dataset['number']

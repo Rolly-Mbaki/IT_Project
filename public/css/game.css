@@ -194,7 +194,9 @@ button{
     border: none;
     margin-right: 10px;
 }
-
+.hidden{
+    display: none;
+}
 @media only screen and (min-width: 800px) {
     .choice-container:hover{
         cursor: pointer;
