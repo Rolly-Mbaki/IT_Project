@@ -4,7 +4,7 @@ const ejs = require("ejs");
 const mongoose = require('mongoose')
 
 // connect met mongoDB
-const dbURI = 'mongodb+srv://testwebsite:testwebsite@fifacluster.5fgn5.mongodb.net/fifa-test?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://testwebsite:testwebsite@fifacluster.5fgn5.mongodb.net/SBCt?retryWrites=true&w=majority'
 mongoose.connect(dbURI)
   .then((result) => console.log('Connected to db'))
   .catch((err) => console.log(err))
