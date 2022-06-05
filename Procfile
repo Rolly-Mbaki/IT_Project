@@ -1,1 +1,1 @@
-web: ts-node index.js
+web: ts-node index.ts

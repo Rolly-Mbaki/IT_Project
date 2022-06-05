@@ -6,8 +6,8 @@ const mongoose = require('mongoose')
 // connect met mongoDB
 const dbURI = 'mongodb+srv://testwebsite:testwebsite@fifacluster.5fgn5.mongodb.net/fifa-test?retryWrites=true&w=majority'
 mongoose.connect(dbURI)
-  .then((result) => console.log('Connected to db'))
-  .catch((err) => console.log(err))
+  .then((result:any) => console.log('Connected to db'))
+  .catch((err:any) => console.log(err))
 
   
 app.use(express.json({ limit: "1mb" }));
