@@ -197,6 +197,13 @@ button{
 .hidden{
     display: none;
 }
+
+textarea{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 @media only screen and (min-width: 800px) {
     .choice-container:hover{
         cursor: pointer;

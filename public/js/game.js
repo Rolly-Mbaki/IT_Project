@@ -52,6 +52,9 @@ allApis
       const clubName = document.querySelector('#clubName')
       const clubId = document.querySelector('#clubId')
       const clubLeagueID = document.querySelector('#clubLeagueID')
+      const BLclubName = document.querySelector('#BLclubName')
+      const BLclubId = document.querySelector('#BLclubId')
+      const BLclubLeagueID = document.querySelector('#BLclubLeagueID')
 
       let currentQuestion = {}
       let acceptingAnswers = true
@@ -193,8 +196,11 @@ allApis
           question.innerText = currentQuestion.question
 
           clubName.value = `${currentQuestion.name}`
+          BLclubName.value = `${currentQuestion.name}`
           clubId.value = `${currentQuestion.id}`
+          BLclubId.value = `${currentQuestion.id}`
           clubLeagueID.value = `${currentQuestion.league}`
+          BLclubLeagueID.value = `${currentQuestion.league}`
 
           choices.forEach(choice=>{
               const number = choice.dataset['number']

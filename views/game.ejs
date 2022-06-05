@@ -53,13 +53,20 @@
             </div>
           </div>
           <img id="apiFoto" src="/images/Barcelona.png" alt="">
-          <form action="/game" method="post">
+          <form action="/game" method="POST" id="toevoegen">
             <input type="text" class="hidden" id="clubName" name="naam">
             <input type="text" class="hidden" id="clubId" name="clubID">
             <input type="text" class="hidden" id="clubLeagueID" name="league">
             <button type="submit" class="like"><i class="fa-solid fa-thumbs-up"></i></button>
           </form>
-          <button type="submit" class="dislike"><i class="fa-solid fa-thumbs-down"></i></button>
+          <form action="/game" method="POST">
+            <input type="text" class="hidden" id="BLclubName" name="BLnaam">
+            <input type="text" class="hidden" id="BLclubId" name="BLclubID">
+            <input type="text" class="hidden" id="BLclubLeagueID" name="BLleague">
+            <button type="submit" class="dislike"><i class="fa-solid fa-thumbs-down"></i></button>
+            <textarea name="BLreason" id="BLreason" cols="30" rows="10" placeholder="Reden waarom je de club gaat blacklisten" required></textarea>
+            
+          </form>
           <h2 id="question">Sample question?</h2>
           <div class="choice-container">
             <p class="choice-prefix">A</p>
