@@ -72,65 +72,67 @@ footer{
 footer p {
     color: #ffffff;
 }
-@media only screen and (min-width: 800px) {
-    main{
-        height: 100vh;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: white;
-    }
 
-    .topnav{
-        display: none;
-    }
-    
+main{
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+main a{
+    text-decoration: none;
+}
+
+.card{
+    width: 300px;
+    border-radius: 25px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    list-style-type: none;
+    font-size: x-large;
+    justify-content: center;
+}
+ul{
+    padding: 0;
+}
+
+@media only screen and (min-width: 800px) {
     #pc-nav{
         display: block;
     }
-    ul li a:hover{
-        color: #20bc4e;
-        border-bottom: 2px solid #20bc4e;
-    }
-    .card:hover{
-        transform: scale(1.01);
-        box-shadow: 1px 1px 18px rgba(32,188,78,255);
-        cursor: pointer;
-    }
-    h1{
-        text-align: center;
-        color: #ffffff;
-    }
-    main{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: auto;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    main a{
-        text-decoration: none;
-    }
+
     .card{
-        display: flex;
-        flex-direction: column;
         width: 500px;
-        
-    
-        border-radius: 25px;
-        background-color: #121212;
-        text-align: center;
-        transition: 0.5s ease;
-    }}
-    .list{
-        display: flex;
-        list-style-type: none;
-        font-size: x-large;
-        justify-content: center;
     }
+    .topnav{
+        display: none;
+    }
+}
+    
     
 
 

@@ -105,6 +105,9 @@ footer p {
 
   }
   /*Tot hier is het dezelfde code voor elke pagina*/
+
+
+
 body{
     color: white;
 }
@@ -132,9 +135,9 @@ body{
 input{
     border: none;
     margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    width: 10rem;
+    padding: 1.2rem;
+    font-size: 1.3rem;
 }
 
 input::placeholder{
@@ -146,7 +149,7 @@ input::placeholder{
 }
 
 #end-text{
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
 }
@@ -164,5 +167,13 @@ input::placeholder{
     .btn[disabled]:hover{
         cursor: not-allowed;
         transform: none;
+    }
+    input{
+        width: 20rem;
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+    #end-text{
+        font-size: 2.4rem;
     }
   }

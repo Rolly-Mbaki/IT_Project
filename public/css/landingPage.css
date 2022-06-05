@@ -118,7 +118,27 @@ main a{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-size: cover;
-
+}
+.card-img2{
+    grid-area: img;
+    background: url("/images/leagues.jpg");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: contain;
+}
+.card-img3{
+    grid-area: img;
+    background: url("/images/blacklisted.jpg");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: contain;
+}
+.card-img4{
+    grid-area: img;
+    background: url("/images/favclub.jpg");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
 }
 
 .card-text{
